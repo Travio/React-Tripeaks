@@ -5,9 +5,64 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background: linear-gradient(rgb(34, 104, 63), rgb(27, 51, 18));
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#playAgain {
+  animation: rotation 10s infinite linear;
+  /* border: dashed; */
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+#footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 99%;
+  font-size: 25px;
+  margin: 5px;
+  text-align: center;
+  align-content: center;
+  background: radial-gradient(#301ca3, #58d6a2);
+  border-radius: 10px;
+  /* border: solid; */
+}
+.sideByside1 {
+  text-align: right;
+  width: 60%;
+  float: left;
+  padding: 20px;
+  color: rgb(228, 213, 79);
+  /* border: 2px solid red; */
+}
+.sideByside1 a {
+  color: rgb(228, 213, 79);
+}
+.sideByside2 {
+  text-align: left;
+  align-content: left;
+  width: 30%;
+  float: left;
+  padding: 20px;
+  /* border: 2px solid red; */
+}
+.mytitle {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+.carddiv {
+  margin: auto;
 }
